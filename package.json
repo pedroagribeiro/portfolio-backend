@@ -31,6 +31,7 @@
     "@prisma/client": "^4.3.1",
     "command-line-args": "^5.2.1",
     "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "express-async-errors": "^3.1.1",

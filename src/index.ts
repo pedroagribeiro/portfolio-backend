@@ -4,11 +4,10 @@ import logger from 'jet-logger';
 import envVars from '@shared/env-vars';
 import server from './server';
 
-
 // Constants
 const serverStartMsg = 'Express server started on port: ';
 
 // Start server
-server.listen(envVars.port, () => {
+server.listen(3001, () => {
   logger.info(serverStartMsg + envVars.port.toString());
 });
