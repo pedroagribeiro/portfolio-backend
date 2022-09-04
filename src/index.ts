@@ -8,6 +8,6 @@ import server from './server';
 const serverStartMsg = 'Express server started on port: ';
 
 // Start server
-server.listen(3001, () => {
+server.listen(envVars.port, () => {
   logger.info(serverStartMsg + envVars.port.toString());
 });
