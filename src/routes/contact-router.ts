@@ -13,6 +13,10 @@ router.post('/submit', async (req: Request, res: Response) => {
     throw new ParamMissingError();
   }
   await contactService.submitContact(contact);
+  res.set(
+    'Access-Control-Allow-Origin',
+    'portfolio-astro-q8mtpv2do-pedroagribeiro.vercel.app',
+  );
   return res.status(CREATED).end();
 });
 
